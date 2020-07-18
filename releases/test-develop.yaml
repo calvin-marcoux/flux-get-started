@@ -8,7 +8,7 @@ metadata:
     fluxcd.io/automated: "false"
     fluxcd.io/tag.chart-image: glob:develop
 spec:
-  releaseName: ghost
+  releaseName: test-develop
   chart:
     git: ssh://git@github.com/calvin-marcoux/flux-get-started
     ref: master
