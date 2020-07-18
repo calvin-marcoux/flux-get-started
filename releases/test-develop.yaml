@@ -1,0 +1,13 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: test-develop
+  namespace: demo
+  annotations: {}
+spec:
+  releaseName: ghost
+  chart:
+    git: ssh://git@github.com/calvin-marcoux/flux-get-started
+    ref: master
+    path: charts/test-develop
