@@ -4,7 +4,9 @@ kind: HelmRelease
 metadata:
   name: test-develop
   namespace: demo
-  annotations: {}
+  annotations:
+    fluxcd.io/automated: "false"
+    fluxcd.io/tag.chart-image: glob:develop
 spec:
   releaseName: ghost
   chart:
